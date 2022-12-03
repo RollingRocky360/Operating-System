@@ -68,6 +68,17 @@ int main() {
         }
     }
 
+    printf("Need Matrix:\n");
+    printf("Proc\\Res ");
+    for (int r=65; r<65+N; r++)
+        printf("%c ", r);
+    printf("\n");
+    for (int p=0; p<M; p++) {
+        printf("%d -----> ", p);
+        for (int r=0; r<N; r++)
+            printf("%d ", need[p][r]);
+        printf("\n");
+    }
     printf("Safe \n");
 
     return 0;
